@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from 'react-native';
-import React from 'react';
+import React, { JSX } from 'react';
 import * as Yup from 'yup';
 
 const passwordSchema = Yup.object().shape({
@@ -9,7 +9,7 @@ const passwordSchema = Yup.object().shape({
     .required('Password Length is Required'),
 });
 
-export default function App() {
+export default function App(): JSX.Element {
   const [password, setPassword] = React.useState('');
 
   return (
