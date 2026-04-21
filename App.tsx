@@ -10,6 +10,8 @@ const passwordSchema = Yup.object().shape({
 });
 
 export default function App() {
+  const [password, setPassword] = React.useState('');
+
   return (
     <View>
       <Text>App</Text>
