@@ -11,6 +11,24 @@ const passwordSchema = Yup.object().shape({
 
 export default function App(): JSX.Element {
   const [password, setPassword] = React.useState('');
+  const [isPassword, setIsPassword] = React.useState(false);
+
+  const [lowerCase, setLowerCase] = React.useState(true);
+  const [uperCase, setUperCase] = React.useState(false);
+  const [numbers, setNumbers] = React.useState(false);
+  const [symbols, setSymbols] = React.useState(false);
+
+  const generatePasswordString = (passwordLength: number) => {
+    //
+  };
+
+  const createPassword = (charactors: string, passwordLength: number) => {
+    //
+  };
+
+  const resetPasswordState = (charactors: string, passwordLength: number) => {
+    //
+  };
 
   return (
     <View>
