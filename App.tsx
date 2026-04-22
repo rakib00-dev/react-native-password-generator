@@ -200,18 +200,21 @@ const styles = StyleSheet.create({
     fontSize: 32,
     fontWeight: '600',
     marginBottom: 15,
+    color: 'white',
   },
   subTitle: {
     fontSize: 26,
+    color: 'white',
     fontWeight: '600',
     marginBottom: 2,
   },
   description: {
-    color: '#758283',
+    color: '#a1b2b4',
     marginBottom: 8,
   },
   heading: {
     fontSize: 15,
+    color: '#c8d5d6',
   },
   inputWrapper: {
     marginBottom: 15,
