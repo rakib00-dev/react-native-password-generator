@@ -208,7 +208,7 @@ const styles = StyleSheet.create({
     marginBottom: 2,
   },
   description: {
-    color: '#a1b2b4',
+    color: '#565a5a',
     marginBottom: 8,
   },
   heading: {
