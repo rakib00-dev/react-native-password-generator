@@ -1,5 +1,4 @@
 import {
-  SafeAreaView,
   ScrollView,
   StyleSheet,
   Text,
@@ -13,6 +12,7 @@ import BouncyCheckbox from '@hoangha2001/react-native-bouncy-checkbox';
 // Form validation
 import * as Yup from 'yup';
 import { Formik } from 'formik';
+import { SafeAreaView } from 'react-native-safe-area-context';
 // YOUTUBE:
 const PasswordSchema = Yup.object().shape({
   passwordLength: Yup.number()
@@ -63,7 +63,6 @@ export default function App() {
       result += characters.charAt(characterIndex);
     }
     return result;
-    console.log('hitesh');
   };
 
   const resetPasswordState = () => {
@@ -231,6 +230,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 4,
     borderColor: '#16213e',
+    color: 'white',
   },
   errorText: {
     fontSize: 12,
